@@ -3898,6 +3898,53 @@
         "runtime": {
           "lib/netstandard1.3/System.Xml.XDocument.dll": {}
         }
+      },
+      "E_Commerce_App.DataAccess/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v7.0",
+        "dependencies": {
+          "E_Commerce_App.Models": "1.0.0",
+          "E_Commerce_App.Utility": "1.0.0",
+          "Microsoft.EntityFrameworkCore": "7.0.9",
+          "Microsoft.EntityFrameworkCore.SqlServer": "7.0.9",
+          "Microsoft.VisualStudio.Web.CodeGeneration.Design": "7.0.8"
+        },
+        "compile": {
+          "bin/placeholder/E_Commerce_App.DataAccess.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/E_Commerce_App.DataAccess.dll": {}
+        }
+      },
+      "E_Commerce_App.Models/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v7.0",
+        "dependencies": {
+          "Microsoft.EntityFrameworkCore": "7.0.9",
+          "Microsoft.EntityFrameworkCore.SqlServer": "7.0.9",
+          "Microsoft.VisualStudio.Web.CodeGeneration.Design": "7.0.8"
+        },
+        "compile": {
+          "bin/placeholder/E_Commerce_App.Models.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/E_Commerce_App.Models.dll": {}
+        }
+      },
+      "E_Commerce_App.Utility/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v7.0",
+        "dependencies": {
+          "Microsoft.EntityFrameworkCore": "7.0.9",
+          "Microsoft.EntityFrameworkCore.SqlServer": "7.0.9",
+          "Microsoft.VisualStudio.Web.CodeGeneration.Design": "7.0.8"
+        },
+        "compile": {
+          "bin/placeholder/E_Commerce_App.Utility.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/E_Commerce_App.Utility.dll": {}
+        }
       }
     }
   },
@@ -11325,10 +11372,26 @@
         "system.xml.xdocument.4.3.0.nupkg.sha512",
         "system.xml.xdocument.nuspec"
       ]
+    },
+    "E_Commerce_App.DataAccess/1.0.0": {
+      "type": "project",
+      "path": "../E_Commerce_App.DataAccess/E_Commerce_App.DataAccess.csproj",
+      "msbuildProject": "../E_Commerce_App.DataAccess/E_Commerce_App.DataAccess.csproj"
+    },
+    "E_Commerce_App.Models/1.0.0": {
+      "type": "project",
+      "path": "../E_Commerce_App.Models/E_Commerce_App.Models.csproj",
+      "msbuildProject": "../E_Commerce_App.Models/E_Commerce_App.Models.csproj"
+    },
+    "E_Commerce_App.Utility/1.0.0": {
+      "type": "project",
+      "path": "../E_Commerce_App.Utilities/E_Commerce_App.Utility.csproj",
+      "msbuildProject": "../E_Commerce_App.Utilities/E_Commerce_App.Utility.csproj"
     }
   },
   "projectFileDependencyGroups": {
     "net7.0": [
+      "E_Commerce_App.DataAccess >= 1.0.0",
       "Microsoft.EntityFrameworkCore >= 7.0.9",
       "Microsoft.EntityFrameworkCore.SqlServer >= 7.0.9",
       "Microsoft.EntityFrameworkCore.Tools >= 7.0.9",
@@ -11366,7 +11429,11 @@
       "frameworks": {
         "net7.0": {
           "targetAlias": "net7.0",
-          "projectReferences": {}
+          "projectReferences": {
+            "C:\\Users\\User\\Documents\\GitHub\\E-Commerce-App\\E-Commerce-App\\E_Commerce_App.DataAccess\\E_Commerce_App.DataAccess.csproj": {
+              "projectPath": "C:\\Users\\User\\Documents\\GitHub\\E-Commerce-App\\E-Commerce-App\\E_Commerce_App.DataAccess\\E_Commerce_App.DataAccess.csproj"
+            }
+          }
         }
       },
       "warningProperties": {

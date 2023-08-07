@@ -1,0 +1,14 @@
+C:\Users\User\Documents\GitHub\E-Commerce-App\E-Commerce-App\E_Commerce_App.Models\bin\Debug\net7.0\E_Commerce_App.Models.deps.json
+C:\Users\User\Documents\GitHub\E-Commerce-App\E-Commerce-App\E_Commerce_App.Models\bin\Debug\net7.0\E_Commerce_App.Models.runtimeconfig.json
+C:\Users\User\Documents\GitHub\E-Commerce-App\E-Commerce-App\E_Commerce_App.Models\bin\Debug\net7.0\E_Commerce_App.Models.dll
+C:\Users\User\Documents\GitHub\E-Commerce-App\E-Commerce-App\E_Commerce_App.Models\bin\Debug\net7.0\E_Commerce_App.Models.pdb
+C:\Users\User\Documents\GitHub\E-Commerce-App\E-Commerce-App\E_Commerce_App.Models\obj\Debug\net7.0\E_Commerce_App.Models.csproj.AssemblyReference.cache
+C:\Users\User\Documents\GitHub\E-Commerce-App\E-Commerce-App\E_Commerce_App.Models\obj\Debug\net7.0\E_Commerce_App.Models.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\User\Documents\GitHub\E-Commerce-App\E-Commerce-App\E_Commerce_App.Models\obj\Debug\net7.0\E_Commerce_App.Models.AssemblyInfoInputs.cache
+C:\Users\User\Documents\GitHub\E-Commerce-App\E-Commerce-App\E_Commerce_App.Models\obj\Debug\net7.0\E_Commerce_App.Models.AssemblyInfo.cs
+C:\Users\User\Documents\GitHub\E-Commerce-App\E-Commerce-App\E_Commerce_App.Models\obj\Debug\net7.0\E_Commerce_App.Models.csproj.CoreCompileInputs.cache
+C:\Users\User\Documents\GitHub\E-Commerce-App\E-Commerce-App\E_Commerce_App.Models\obj\Debug\net7.0\E_Commerce_App.Models.dll
+C:\Users\User\Documents\GitHub\E-Commerce-App\E-Commerce-App\E_Commerce_App.Models\obj\Debug\net7.0\refint\E_Commerce_App.Models.dll
+C:\Users\User\Documents\GitHub\E-Commerce-App\E-Commerce-App\E_Commerce_App.Models\obj\Debug\net7.0\E_Commerce_App.Models.pdb
+C:\Users\User\Documents\GitHub\E-Commerce-App\E-Commerce-App\E_Commerce_App.Models\obj\Debug\net7.0\E_Commerce_App.Models.genruntimeconfig.cache
+C:\Users\User\Documents\GitHub\E-Commerce-App\E-Commerce-App\E_Commerce_App.Models\obj\Debug\net7.0\ref\E_Commerce_App.Models.dll

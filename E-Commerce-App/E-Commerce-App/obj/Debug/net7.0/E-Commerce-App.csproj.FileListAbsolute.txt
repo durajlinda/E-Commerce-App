@@ -251,3 +251,9 @@ C:\Users\User\Documents\GitHub\E-Commerce-App\E-Commerce-App\E-Commerce-App\bin\
 C:\Users\User\Documents\GitHub\E-Commerce-App\E-Commerce-App\E-Commerce-App\bin\Debug\net7.0\runtimes\win\lib\net6.0\System.Drawing.Common.dll
 C:\Users\User\Documents\GitHub\E-Commerce-App\E-Commerce-App\E-Commerce-App\bin\Debug\net7.0\runtimes\win\lib\net6.0\System.Security.Cryptography.ProtectedData.dll
 C:\Users\User\Documents\GitHub\E-Commerce-App\E-Commerce-App\E-Commerce-App\bin\Debug\net7.0\runtimes\win\lib\net6.0\System.Windows.Extensions.dll
+C:\Users\User\Documents\GitHub\E-Commerce-App\E-Commerce-App\E-Commerce-App\bin\Debug\net7.0\E_Commerce_App.DataAccess.dll
+C:\Users\User\Documents\GitHub\E-Commerce-App\E-Commerce-App\E-Commerce-App\bin\Debug\net7.0\E_Commerce_App.Models.dll
+C:\Users\User\Documents\GitHub\E-Commerce-App\E-Commerce-App\E-Commerce-App\bin\Debug\net7.0\E_Commerce_App.Utility.dll
+C:\Users\User\Documents\GitHub\E-Commerce-App\E-Commerce-App\E-Commerce-App\bin\Debug\net7.0\E_Commerce_App.DataAccess.pdb
+C:\Users\User\Documents\GitHub\E-Commerce-App\E-Commerce-App\E-Commerce-App\bin\Debug\net7.0\E_Commerce_App.Models.pdb
+C:\Users\User\Documents\GitHub\E-Commerce-App\E-Commerce-App\E-Commerce-App\bin\Debug\net7.0\E_Commerce_App.Utility.pdb
