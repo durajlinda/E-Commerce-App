@@ -21,4 +21,8 @@
     <ProjectReference Include="..\E_Commerce_App.DataAccess\E_Commerce_App.DataAccess.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="Controllers\" />
+  </ItemGroup>
+
 </Project>

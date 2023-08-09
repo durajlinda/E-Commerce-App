@@ -1,22 +1,24 @@
-﻿
-using E_Commerce_App.DataAccess.Data;
+﻿using E_Commerce_App.DataAccess.Data;
+using E_Commerce_App.DataAccess.Repository.IRepository;
 using E_Commerce_App.Models;
 using Microsoft.AspNetCore.Mvc;
+using System.Collections.Generic;
 
-namespace E_Commerce_App.Controllers
+namespace E_Commerce_App.Areas.Admin.Controllers
 {
+    [Area("Admin")]
     public class CategoryController : Controller
     {
-        private readonly ApplicationDbContext _db;
+        private readonly ICategoryRepository _categoryRepo;
 
-        public CategoryController(ApplicationDbContext db)
+        public CategoryController(ICategoryRepository db)
         {
-            _db = db;
+            _categoryRepo = db;
 
         }
         public IActionResult Index()
         {
-            List<Category> objCategoryList = _db.Categories.ToList();
+            List<Category> objCategoryList = _categoryRepo.GetAll().ToList();
             return View(objCategoryList);
         }
 
@@ -36,8 +38,8 @@ namespace E_Commerce_App.Controllers
 
             if (ModelState.IsValid)
             {
-                _db.Categories.Add(obj);
-                _db.SaveChanges();
+                _categoryRepo.Add(obj);
+                _categoryRepo.Save();
                 TempData["success"] = "Category created successfully";
                 return RedirectToAction("Index");
             }
@@ -50,9 +52,7 @@ namespace E_Commerce_App.Controllers
             {
                 return NotFound();
             }
-            var categoryFromDb = _db.Categories.Find(id);
-            //var categoryFromDbFirst = _db.Categories.FirstOrDefault(u=>u.Id==id);
-            //var categoryFromDbSingle = _db.Categories.SingleOrDefault(u => u.Id == id);
+            Category categoryFromDb = _categoryRepo.Get(id.Value);
 
             if (categoryFromDb == null)
             {
@@ -61,6 +61,8 @@ namespace E_Commerce_App.Controllers
 
             return View(categoryFromDb);
         }
+
+        // Similarly for other actions ...
 
 
         [HttpPost]
@@ -74,8 +76,8 @@ namespace E_Commerce_App.Controllers
 
             if (ModelState.IsValid)
             {
-                _db.Categories.Update(obj);
-                _db.SaveChanges();
+                _categoryRepo.Update(obj);
+                _categoryRepo.Save();
                 TempData["success"] = "Category updated successfully";
                 return RedirectToAction("Index");
             }
@@ -87,7 +89,7 @@ namespace E_Commerce_App.Controllers
             {
                 return NotFound();
             }
-            var categoryFromDb = _db.Categories.Find(id);
+            Category categoryFromDb = _categoryRepo.Get(id.Value);
             //var categoryFromDbFirst = _db.Categories.FirstOrDefault(u=>u.Id==id);
             //var categoryFromDbSingle = _db.Categories.SingleOrDefault(u => u.Id == id);
 
@@ -99,19 +101,18 @@ namespace E_Commerce_App.Controllers
             return View(categoryFromDb);
         }
 
-        //POST
         [HttpPost, ActionName("Delete")]
         [ValidateAntiForgeryToken]
         public IActionResult DeletePOST(int? id)
         {
-            var obj = _db.Categories.Find(id);
+            Category obj = _categoryRepo.Get(id.GetValueOrDefault());
             if (obj == null)
             {
                 return NotFound();
             }
 
-            _db.Categories.Remove(obj);
-            _db.SaveChanges();
+            _categoryRepo.Remove(obj);
+            _categoryRepo.Save();
             TempData["success"] = "Category deleted successfully";
             return RedirectToAction("Index");
         }
