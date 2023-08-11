@@ -11,16 +11,35 @@ namespace E_Commerce_App.DataAccess.Data
 
         }
         public DbSet<Category> Categories { get; set; }
+        public DbSet<Product> Products { get; set; }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             modelBuilder.Entity<Category>().HasData(
-                               new Category { Id = 1, Name = "Electronics", DisplayOrder = 1 },
-                               new Category { Id = 2, Name = "Clothes", DisplayOrder = 2 },
-                               new Category { Id = 3, Name = "Grocery", DisplayOrder = 3 },
-                               new Category { Id = 4, Name = "Books", DisplayOrder = 4 },
-                               new Category { Id = 5, Name = "Furniture", DisplayOrder = 5 }
+                               new Category { Id = 1, Name = "Action", DisplayOrder = 1 },
+
+                               new Category { Id = 2, Name = "Biography", DisplayOrder = 2 },
+                                 new Category { Id = 3, Name = "Horror", DisplayOrder = 3 }
+
+
                                                                                                       );
+            modelBuilder.Entity<Product>().HasData(
+                new Product
+                {
+                    Id = 1,
+                    Title = "The Alchemist",
+                    Author = "Paulo Coelho",
+                    Description = "The Alchemist is a novel by Brazilian author Paulo Coelho that was first published in 1988. Originally written in Portuguese, it became a widely translated international bestseller.",
+                    ISBN = "978-0-06-231500-7",
+                    ListPrice = 99,
+                    Price = 99,
+                    Price50 = 85,
+                    Price100 = 80,
+                }
+
+               
+
+                );
         }
     }
 }

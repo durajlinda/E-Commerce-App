@@ -5,11 +5,11 @@ using E_Commerce_App.Models;
 
 namespace E_Commerce_App.DataAccess.Repository
 {
-    public class CategoryRepository : Repository<Category>, ICategoryRepository
+    public class ProductRepository : Repository<Product>, IProductRepository
     {
         private ApplicationDbContext _db;
 
-        public CategoryRepository(ApplicationDbContext db) : base(db)
+        public ProductRepository(ApplicationDbContext db) : base(db)
         {
             _db = db;
         }
@@ -19,16 +19,14 @@ namespace E_Commerce_App.DataAccess.Repository
             _db.SaveChanges();
         }
 
-        public void Update(Category obj)
+        public void Update(Product obj)
         {
-            _db.Categories.Update(obj);
+            _db.Products.Update(obj);
         }
 
-
-        public Category Get(int id)
+        public Product Get(int id)
         {
-            return _db.Categories.FirstOrDefault(c => c.Id == id);
+            return _db.Products.FirstOrDefault(p => p.Id == id);
         }
-
     }
 }
